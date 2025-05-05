@@ -33,7 +33,7 @@ impl<A: LeafwingUserAction> Plugin for LeafwingInputPlugin<A> {
 
         app.register_required_components::<ActionState<A>, InputBuffer<A>>();
         app.register_required_components::<InputBuffer<A>, ActionState<A>>();
-        app.register_required_components::<InputMap<A>, ActionState<A>>();
+        /*app.register_required_components::<InputMap<A>, ActionState<A>>();*/
         if is_client {
             app.add_plugins(
                 crate::client::input::leafwing::LeafwingInputPlugin::<A>::new(self.config),

@@ -4,8 +4,6 @@ use alloc::{vec, vec::Vec};
 use bevy::ecs::component::Tick as BevyTick;
 use bevy::ecs::entity::MapEntities;
 use bevy::prelude::{Resource, World};
-#[cfg(feature = "leafwing")]
-use bevy::utils::HashMap;
 use bytes::Bytes;
 use core::time::Duration;
 use tracing::{debug, trace, trace_span};
